@@ -16,10 +16,10 @@ public interface EmpleadoClient {
     Empleado obtenerEmpleadoXId(@PathVariable("id") int id);
 
     @PostMapping("/create")
-    Empleado crearEmpleado(@RequestBody Empleado cliente);
+    Empleado crearEmpleado(@RequestBody Empleado empleado);
 
     @PutMapping("/update/{id}")
-    Empleado actualizarEmpleado(@RequestBody Empleado cliente, @PathVariable("id") Long id);
+    Empleado actualizarEmpleado(@RequestBody Empleado empleado, @PathVariable("id") Long id);
 
     @DeleteMapping("/delete/{id}")
     String eliminarEmpleado(@PathVariable("id") int id);
