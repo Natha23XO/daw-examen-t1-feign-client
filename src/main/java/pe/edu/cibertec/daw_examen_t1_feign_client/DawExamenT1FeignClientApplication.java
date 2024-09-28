@@ -2,7 +2,9 @@ package pe.edu.cibertec.daw_examen_t1_feign_client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
+@EnableFeignClients
 @SpringBootApplication
 public class DawExamenT1FeignClientApplication {
 
